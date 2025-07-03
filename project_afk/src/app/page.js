@@ -6,7 +6,7 @@ import PrizePoolSection from './pages/prizePool';
 import TournamentDetails from './pages/details';
 import Regi from './pages/regi';
 import dynamic from 'next/dynamic';
-
+import Footer from './layout/_footer';
 const Layout = dynamic(() => import('./layout/_layout'));
 
 export default function Home() {
