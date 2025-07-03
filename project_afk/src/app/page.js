@@ -1,13 +1,24 @@
 import HeroPage from './pages/hero';
 import RoadMap from './pages/roadmap';
+import SponsorsSection from './pages/sponsor';
+import PartnerSection from './pages/partner';
+import PrizePoolSection from './pages/prizePool';
+import TournamentDetails from './pages/details';
 import Regi from './pages/regi';
+import dynamic from 'next/dynamic';
+
+const Layout = dynamic(() => import('./layout/_layout'));
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <HeroPage ></HeroPage>
-      <RoadMap></RoadMap>
-      <Regi></Regi>
-    </div>
-  );
-}
+    <>
+      <Layout>
+        <HeroPage />
+        <SponsorsSection />
+        <PartnerSection />
+        <PrizePoolSection />
+        <TournamentDetails />
+        <RoadMap />
+        <Regi />
+      </Layout>
+    </>
