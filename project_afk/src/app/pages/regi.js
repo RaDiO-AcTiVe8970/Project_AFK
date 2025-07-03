@@ -9,7 +9,7 @@ const tournaments = [
         entryFee: "",
         eligibility: "",
         formLink: "",
-        logo: "/valorant.png" 
+        logo: "/valorant.png"
     },
     {
         id: 2,
