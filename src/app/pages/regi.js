@@ -11,7 +11,7 @@ const tournaments = [
         entryFee: "",
         eligibility: "",
         formLink: "",
-        logo: "/valorant.png"
+        logo: "/afk-white.png"
     },
     {
         id: 2,
@@ -105,13 +105,13 @@ function Regi() {
                             <div className="card-body p-6">
                                 {/* Logo Section - Added at the top of the card */}
                                 <div className="flex justify-center mb-4">
-                                    <div className="w-20 h-20 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center overflow-hidden border-2 border-gray-200 dark:border-gray-700">
+                                    <div className="flex items-center justify-center overflow-hidden ">
                                         <Image
                                             src={tournament.logo}
                                             alt={`${tournament.name} logo`}
-                                            className="w-16 h-16 object-contain"
-                                            width={64}
-                                            height={64}
+                                            className="object-contain"
+                                            width={100}
+                                            height={100}
                                         />
                                     </div>
                                 </div>
