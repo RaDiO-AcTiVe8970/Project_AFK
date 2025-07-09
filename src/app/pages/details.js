@@ -6,7 +6,7 @@ export default function TournamentDetails() {
   const tournaments = [
     {
       name: "Valorant",
-      prize: "BDT 30,000",
+      prize: "BDT 20,000",
       first: "BDT 20,000",
       second: "BDT 10,000",
       third: "-",
