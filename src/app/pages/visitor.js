@@ -57,7 +57,7 @@ function VisitorSection() {
                             initial="offscreen"
                             whileInView="onscreen"
                             viewport={{ once: true, margin: "-50px" }}
-                            className="card bg-black bg-base-100 shadow-md hover:shadow-lg transition-shadow duration-300 border border-base-300 rounded-lg overflow-hidden"
+                            className="card bg-black shadow-md hover:shadow-lg transition-shadow duration-300 border border-base-300 rounded-lg overflow-hidden"
                             style={{
                                 boxShadow: "0 0 20px 0 rgba(247, 247, 247, 0.8)",
                             }}
