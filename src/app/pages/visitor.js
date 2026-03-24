@@ -1,6 +1,6 @@
 "use client";
 
-import Image from 'next/image';
+import ImageWithFallback from '../components/image-with-fallback';
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -66,7 +66,7 @@ function VisitorSection() {
                                 {/* Logo Section - Added at the top of the card */}
                                 <div className="flex origin-center justify-center mb-4">
                                     <div className="w-20 h-20 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center overflow-hidden border-2 border-gray-200 dark:border-gray-700">
-                                        <Image
+                                        <ImageWithFallback
                                             src={tournament.logo}
                                             alt={`${tournament.name} logo`}
                                             className="w-16 h-16 object-contain"

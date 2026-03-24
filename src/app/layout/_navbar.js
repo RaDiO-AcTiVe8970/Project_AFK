@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/router";
-import Image from "next/image";
+import ImageWithFallback from "../components/image-with-fallback";
 import { useEffect } from "react";
 import { useState } from "react";
 
@@ -101,7 +101,7 @@ const NavBar = () => {
     <div className="navbar bg-base-black" style={_NavBar} data-theme="dark">
   <div className="flex-1">
     <a className="btn btn-ghost normal-case text-xl" onClick={sendToHome}>
-      <Image src={"/afk-white.png"} alt="Preview" width={100} height={50} />
+      <ImageWithFallback src={"/afk-white.png"} alt="Preview" width={100} height={50} />
     </a>
   </div>
   <div className="flex-none">

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from 'next/image';
+import ImageWithFallback from '../components/image-with-fallback';
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -106,7 +106,7 @@ function Regi() {
                                 {/* Logo Section - Added at the top of the card */}
                                 <div className="flex justify-center mb-4">
                                     <div className="flex items-center justify-center overflow-hidden ">
-                                        <Image
+                                        <ImageWithFallback
                                             src={tournament.logo}
                                             alt={`${tournament.name} logo`}
                                             className="object-contain"

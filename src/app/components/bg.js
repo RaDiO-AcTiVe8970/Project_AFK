@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import Image from "next/image";
+import ImageWithFallback from "./image-with-fallback";
 import { useEffect } from "react";
 
 const P5Animation = () => {
@@ -205,7 +205,7 @@ const P5Animation = () => {
 
   return (
     <div className="hero flex flex-col items-center justify-center min-h-screen relative">
-      <Image
+      <ImageWithFallback
         src="/afk-white.png"
         alt="Hero Image"
         width={500}

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ImageWithFallback from "./image-with-fallback";
 
 export default function Card({ src, alt, label, width = 150, height = 100 }) {
   return (
@@ -12,7 +12,7 @@ export default function Card({ src, alt, label, width = 150, height = 100 }) {
         className="flex items-center justify-center mb-4"
         style={{ width: `${width}px`, height: `${height}px` }}
       >
-        <Image
+        <ImageWithFallback
           src={src}
           alt={alt}
           width={width}

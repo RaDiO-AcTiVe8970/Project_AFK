@@ -1,5 +1,5 @@
 import P5Animation from "../components/bg";
-import Image from "next/image";
+import ImageWithFallback from "../components/image-with-fallback";
 import InteractiveGridBackground from "@/app/components/ui/interactive-grid-background";
 
 function HeroPage() {
@@ -18,7 +18,7 @@ function HeroPage() {
         fadeIntensity={25}
       >
         <div className="hero flex flex-col items-center justify-center min-h-screen">
-        <Image
+        <ImageWithFallback
             src="/afk-white.png"
             alt="Hero Image"
             width={500}

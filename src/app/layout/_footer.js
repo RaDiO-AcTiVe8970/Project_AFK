@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import ImageWithFallback from "../components/image-with-fallback";
 
 export default function Footer() {
   return (
@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Logo and description */}
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <Image
+              <ImageWithFallback
                 src="/afk-white.png"
                 alt="AFK Productions Logo"
                 className="w-8 h-8"
